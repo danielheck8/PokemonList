@@ -26,8 +26,6 @@ function App() {
     },
   ];
 
-  //Comentario teste
-
   return (
     <div className='container-app'>
 
