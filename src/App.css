@@ -6,12 +6,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  align-items: center;
 }
 
 .pokemon-item-container {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 25px;
-  padding: 25px;
+  padding: 20px;
+  max-width:500px;
 }
 
 .pokemon-item-header {
@@ -22,8 +24,9 @@ body {
 }
 
 .pokemon-name {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 600;
+  background: greenyellow;
 }
 
 .pokemon-id {
@@ -46,7 +49,7 @@ body {
 .pokemon-item-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .title-container {
@@ -61,12 +64,13 @@ body {
 /* BADGE STYLES  */
 .badge-type {
   height: 30px;
-  width: 100px;
+  width: 120px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 4px 0px rgb(105 105 105 / 45%);
+  background: greenyellow;
 }
 
 .badge-type.water {
@@ -100,4 +104,10 @@ body {
 .type-list {
   display: flex;
   gap: 10px;
+}
+
+.imagem {
+  display: flex;
+  width: 150px;
+  height: 150px;
 }

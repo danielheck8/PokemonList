@@ -5,25 +5,41 @@ function App() {
   var pokemons = [
     {
       id: '001',
-      nome: 'Bulbasaur',
+      nome: 'Spanka-mente',
+      img: 'https://images.leafly.com/flower-images/pineapple-express.png?auto=compress,format&w=480&dpr=1',
       types: [
-        { name: 'grass' }
+        { name: 'indica' }
       ],
       weaknesses: [
-        { name: 'fire' }
+        { name: 'Informacao' },
+        { name: 'Informacao ad' },
       ]
     },
     {
-      id: '007',
-      nome: 'Squirtle',
+      id: '002',
+      nome: 'Og kush',
+      img: 'https://www.seedsman.com/media/catalog/product/cache/23/image/9df78eab33525d08d6e5fb8d27136e95/o/g/og-kush-fem.png',
       types: [
-        { name: 'water' }
+        { name: 'Og Kushonha' }
       ],
       weaknesses: [
-        { name: 'grass' },
-        { name: 'electric' },
+        { name: 'Informacao' },
+        { name: 'Informacao ad' },
       ]
     },
+    {
+      id: '003',
+      nome: 'Outra erva',
+      img: 'https://images-na.ssl-images-amazon.com/images/I/51pMwEakkBL.png',
+      types: [
+        { name: 'folha' }
+      ],
+      weaknesses: [
+        { name: 'Canhamo' },
+        { name: 'Informacao' },
+      ]
+    },  
+    
   ];
 
   return (
@@ -35,6 +51,7 @@ function App() {
             const {
               id = 0 ,
               nome = '',
+              img = '',
               types = [],
               weaknesses = [],
             } = item;
@@ -43,7 +60,6 @@ function App() {
             if (isBulbasaur) {
               return <></>;
             }
-
             return (
                 <div className='pokemon-item-container'>
                   <div className='pokemon-item-header'>
@@ -53,7 +69,7 @@ function App() {
 
                   <div className='pokemon-card'>
                     <div className='pokemon-image'>
-                      <img src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${id}.png`} />
+                    <img className='imagem' src={img} />
                     </div>
 
                     <div className='pokemon-item-info' id='info'>
